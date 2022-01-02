@@ -1,0 +1,383 @@
+html, body {
+  margin: 0px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #0b0c10 !important;
+}
+body {
+  overflow-y: hidden;
+  position: relative;
+  color: #c5c6c7 !important;
+}
+::selection {
+  background-color: #a1102dc5;
+  color: #000000;
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+.header {
+  width: 100%;
+  height: 66px;
+  display: grid;
+  align-items: unset;
+  justify-content: unset;
+}
+#backarrow {
+  background-image: url("dark_backwards.svg") !important;
+  margin-left: 2%;
+  transition: 0.3s;
+  display: block;
+}
+#backarrow:hover {
+  filter: brightness(3.5);
+}
+.modal-content {
+  color: #000;
+}
+.box, .box-shadow, .vertical, .horizontal {
+  position: absolute;
+  background-color: #000000;
+  display: none;
+}
+.box {
+  width: 16px;
+  height: 16px;
+  z-index: 200;
+}
+.boxes, .header, .sideline {
+  transition: 0.3s;
+}
+.vertical {
+  width: 3px;
+  height: 49px;
+  top: 9px;
+  background-color: #c8c8c8;
+}
+.horizontal {
+  width: 134.29px;
+  height: 1px;
+  background-color: #c8c8c8;
+  top: 15px;
+  left: 8px;
+}
+.hamburger {
+  position: absolute;
+  right: 7px;
+  top: 9px;
+  width: 44px;
+  height: 44px;
+}
+.ham-shadow {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  width: 44px;
+  height: 44px;
+}
+.hamburger span:nth-child(2) {
+  margin: 12px 0px 12px 0px;
+}
+.hamburger span {
+  background-color: #ffffff;
+  width: 100%;
+  height: 4px;
+  display: block;
+}
+.hamburger, .hamburger span {
+  cursor: pointer;
+}
+.hamburger:hover, .hamburger span:hover {
+  background-image: url(glitchburger.gif);
+  background-size: cover;
+  background-position: center;
+}
+.hamburger span:hover {
+  display: none;
+}
+.logotext {
+  display: flex;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 46px;
+  font-weight: bolder;
+}
+.sideline {
+  width: 0.5px;
+  height: 195px;
+  background-color: #c8c8c8;
+  top: 74px;
+  left: 5px;
+  position: fixed;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 46px 2%;
+}
+.shard-wrapper {
+  position: relative;
+  width: 93%;
+  min-height: 199px;
+  height: 100%;
+  margin-top: 35px;
+  background-color: pink;
+}
+.shard {
+  width: 93%;
+  min-height: 199px;
+  margin-top: 35px;
+  background-color: #c8c8c8;
+  z-index: 99;
+  box-shadow: 5px 0px #101010;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(missing.png);
+}
+.shard:hover > .chardnumber {
+  right: 0;
+  top: 0;
+}
+.shard:hover {
+  transform: scale(1.01);
+}
+.shard:hover > .gradi {
+  width: 93%;
+}
+.shard:hover > .cardfont font {
+  display: block;
+}
+.shard p {
+  color: #66fcf1;
+}
+.gradi:hover:before {
+  transform: translateX(-120%) skewX(-10deg);
+}
+.gradi {
+  width: 55%;
+  top: 35px;
+  position: absolute;
+  height: 85%;
+  display: inline-block;
+  transition: 0.3s;
+}
+.gradi:hover {
+  width: 100% !important;
+  height: 86%;
+  border-bottom: 100px solid#000000c7;
+  border-left: 0px solid transparent;
+}
+.gradi:hover::after {
+  content: "READ";
+  background-color: #dc143c70;
+  color: #000000;
+  bottom: -18px;
+  text-decoration: underline;
+  line-height: 65px;
+  position: absolute;
+  margin: 17px 0;
+}
+.bgborder {
+  border: 1px solid #45a29e;
+  width: 91%;
+  height: 83%;
+  position: absolute;
+  display: block;
+  top: 47px;
+  left: 7.5%;
+}
+.chardnumber {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  right: 3.5%;
+  top: 35px;
+  border: 1px solid #808080;
+  border-top: unset;
+  border-right: unset;
+  background-color: #1f2833;
+  color: #d5d5d5;
+  text-align-last: end;
+}
+.cardfont font {
+  display: none;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  margin-bottom: top;
+  bottom: -42px;
+  left: 10px;
+}
+.modal-content {
+  background-color: #fff !important;
+  border: 1px solid #999 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  box-shadow: -3px 0px 0px 0px rgb(0, 0, 0) !important;
+  border-radius: unset !important;
+}
+.btn {
+  border-left: 2px solid #010000 !important;
+  border-right: unset !important;
+  border-top: unset !important;
+  border-bottom: unset !important;
+  border-radius: unset !important;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  overflow-y: hidden;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #535353;
+  text-decoration: none;
+}
+.sidebar a:active {
+  color: #a1102d !important;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.scrollToTop {
+  display: flex;
+  align-items: center;
+  margin: 44px 0px;
+  flex-flow: column;
+  font-weight: bold;
+  height: 100px;
+}
+.scrollToTop img {
+  content: url(dark-spincore.svg);
+  width: 120px;
+}
+.scrollToTop img:hover {
+  box-shadow: 0 0 20px black;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.gradi_box {
+  background-image: url(asset3.png);
+  background-size: 0% 100%;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  image-rendering: optimizespeed;
+  margin-top: -40px;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  font-size: 0;
+  padding: 10px 45px 10 10;
+  opacity: 0.8;
+}
+.gradi_box:hover {
+  background-size: 100% 100%;
+  font-size: 23;
+  font-family: bold;
+  color: white;
+}
+.gradi_box:hover > .card_desc {
+  font-size: 20 !important;
+}
+.text_content b {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 10 20 10;
+}
+.card_desc {
+  overflow: hidden;
+  width: -webkit-fill-available;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.text_content {
+  opacity: 1;
+}
+.meTitle {
+  margin-left: 30px;
+  padding-left: 3.5%;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  .shard {
+          height: 50%;
+  }
+}
+@-moz-document url-prefix() {
+  body {
+      height: 100vh;
+      overflow-y: auto !important;
+ }
+  html {
+      overflow: unset;
+ }
+}
+@media only screen and (min-width: 1300px) {
+  .wrapper {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 34%;
+      height: 100%;
+      margin: 30px 2%;
+ }
+  #backarrow {
+      display: none;
+ }
+  .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+ }
+  .shard p {
+      font-weight: 700;
+      transform: rotate(90deg);
+      transform-origin: 0 0;
+      text-transform: uppercase;
+ }
+  .meTitle {
+      padding-left: unset;
+ }
+  .shard {
+      min-height: 250px !important;
+ }
+  .scramble::after {
+      color: rgb(126, 126, 126);
+ }
+  .gradi:hover::after {
+      margin: 21px 0;
+ }
+  .sidebar {
+      padding-top: 120px;
+ }
+  .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ }
+}
+@media only screen and (min-width: 800px) {
+  .shard {
+      min-height: 350px;
+ }
+}

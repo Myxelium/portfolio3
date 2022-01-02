@@ -1,0 +1,47 @@
+{
+    "information": {
+      "intro": "Hey I'm Ludvig",
+      "desc": "I’m a studying web developer with a passion for programming. I love both front end and back-end so that makes me a fullstack developer. I have written code for years and love solving problems and learning new things every day!",
+      "image": ""
+    },
+    "html": {
+      "percentage": "",
+      "components": {
+        "basics": {
+          "basics_desc": "Document structure, such as document type, HTML, headings, links, images and paragraphs.",
+          "basics_rate": "100",
+          "basics_exp": "Knows all of them without looking them up."
+        },
+        "elements": {
+          "elements_desc": "Nested HTML elements, body, h1, p tags.",
+          "elements_rate": "100",
+          "elements_exp": "Knows all of them without looking them up."
+        },
+        "attributes": {
+          "attributes_desc": "Attributes of HTML tags, such as src, width, height and href, etc.",
+          "attributes_rate": "100",
+          "attributes_exp": "Knows all of them without looking them up."
+        },
+        "headings": {
+          "headings_desc": "The different sizes for h1-h6 tags. Importance in SEO perspective.",
+          "headings_rate": "100",
+          "headings_exp": "Knows all of them without looking them up."
+        },
+        "paragraphs": {
+          "paragraphs_desc": "How to write and format Paragraphs and how the browser read them.",
+          "paragraphs_rate": "100",
+          "paragraphs_exp": "Knows all of them without looking them up."
+        },
+        "styles": {
+          "styles_desc": "How to style HTML elements with CSS.",
+          "styles_rate": "100",
+          "styles_exp": "Knows all of them without looking them up."
+        },
+        "formatting": {
+          "formatting_desc": "Format text to give it a special meaning. Example of this is Bold and Italic.",
+          "formatting_rate": "80",
+          "formatting_exp": "Knows most of them without looking it up."
+        }
+      }
+    }
+  }

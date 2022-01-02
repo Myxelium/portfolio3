@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1300px) {
+    .breadAbout{
+        width: 50%;
+   }
+    .meTitle:first-of-type{
+        flex-direction: column;
+        align-items: center;
+   }
+    .imageOFME{
+        width: 15%;
+   }
+}
+.imageOFME {
+    max-width: 320px;
+    width: 50%;
+    margin: 35px;
+    border-radius: 2px;
+}
+.breadAbout {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 1.75;
+    margin-bottom: 35px;
+}

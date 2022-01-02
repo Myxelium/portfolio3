@@ -1,0 +1,94 @@
+<!---
+
+  I should be ashemed over this code.
+  I have to rewrite it in Angular once I got time over to do so.
+
+-->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="dark_style.css">
+      <link rel="stylesheet" href="slider.css">
+      <link rel="stylesheet" href="extra.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+   </head>
+   <body>
+      <div id="mySidebar" class="sidebar">
+         <a href="javascript:void(0)" class="closebtn">×</a>
+         <a id="home" href="#">Home</a>
+         <a id="aboutme" href="#">About Me</a>
+         <a id="dev" href="#">Development</a>
+         <a id="music" href="#">Music</a>
+         <a id="activeprojects" href="#">Active Projects</a>
+         <a id="contact" href="#">Contact</a>
+         <a id="tools" href="#">Tools</a>
+      </div>
+      <div class="sideline"></div>
+      <div class="header">
+         <span class="box"></span>
+         <span class="ham-shadow"></span>
+         <span class="vertical"></span>
+         <span class="horizontal"></span>
+         <div class="logotext">
+            <p class="scramble">LUDVIG OLAUSSON</p>
+         </div>
+         <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+      <div id="slider">
+         <!-- <div class="meTitle boxes">
+            <h1>Who am I?</h1>
+            <img src="7.png" class="imageOFME">
+            <div class="breadAbout">
+               <p>I am a very creative and driven person who love solving problems and create new things. <br> I spend many
+                  hours of my free time programming and creating everything from websites to robots. Even if I have learned a
+                  lot by myself am I currently studying web development to be even sharper in the area.<br> When I graduate will
+                  I have knowledge in all of those: Node, React, Asp.net, Express, PHP, MongoDB, Angular, Wordpress, CSS and of
+                  course JavaScript.
+               </p>
+            </div>
+         </div> -->
+         <div class="meTitle boxes">
+            <h1>Projects</h1>
+         </div>
+         <div id="boxes-nodes" class="boxes"></div>
+      </div>
+      <div id="agile_div">
+         <div id="backarrow"></div>
+         <div class="ajaxcontent_container">
+            <div id="ajaxcontent">OOps there was a issue contacting the server!</div>
+         </div>
+      </div>
+      <div class="scrollToTop" data-aos="fade-up">
+         <img src="asset2.png" alt="to top spinJS">
+         <p>Scroll to top</p>
+      </div>
+   </body>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+   <script src="spincore.min.js"></script>
+   <script src="jquery.fittext.js"></script>
+   <script>
+      AOS.init();
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+   <script src="slidescript.js"></script>
+   <script src="descrambler.min.js"></script>
+   <script src="script.js"></script>
+</html>
